@@ -11,4 +11,5 @@ This application uses SwiftUI to demonstrate navigation path logic. It contains 
 6. Designed for scalability.
 
 ## App Demo
-![Demo](NavitaionPathSample/NavigationSample.gif)
+<img src="NavitaionPathSample/NavigationSample.gif" alt="Demo" width="300">
+

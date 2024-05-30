@@ -10,6 +10,8 @@ import SwiftUI
 final class NavigationManager: Navigator {
     typealias RoutePage = Route
     @Published var path = NavigationPath()
+    @Published var sheetStyle: Route?
+    @Published var fullScreenStyle: Route?
 }
 
 extension NavigationManager {

@@ -14,9 +14,9 @@ struct NavigationView: View {
     var body: some View {
         NavigationStack(path: $navigate.path) {
             navigate(to: .firstScreen)
-                .navigationDestination(for: Route.self) { page in
-                    navigate(to: page)
-                }
+                .sheet(item: $navigate.sheetStyle, content: sheetContent)
+                .fullScreenCover(item: $navigate.fullScreenStyle, content: coverContent)
+                .navigationDestination(for: Route.self, destination: linkDestination)
         }
         .environmentObject(navigate)
     }
@@ -30,6 +30,39 @@ struct NavigationView: View {
             SecondView()
         case .thirdScreen(let name):
             ThirdView(name)
+        default:
+            EmptyView()
+        }
+    }
+    
+    @ViewBuilder private func linkDestination(link: Route) -> some View {
+        switch link {
+        case .firstScreen:
+            FirstView()
+        case .secondScreen:
+            SecondView()
+        case .thirdScreen(let name):
+            ThirdView(name)
+        default:
+            EmptyView()
+        }
+    }
+    
+    @ViewBuilder private func sheetContent(link: Route) -> some View {
+        switch link {
+        case .sheetLink(_):
+            SheetPopupView()
+        default:
+            EmptyView()
+        }
+    }
+    
+    @ViewBuilder private func coverContent(link: Route) -> some View {
+        switch link {
+        case .coverLink(_):
+            FullCoverView()
+        default:
+            EmptyView()
         }
     }
 }

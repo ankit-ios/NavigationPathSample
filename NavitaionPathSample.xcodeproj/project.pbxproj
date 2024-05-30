@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD2CA50D2C08D5CE00FFFFFF /* SheetPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2CA50C2C08D5CE00FFFFFF /* SheetPopupView.swift */; };
+		AD2CA50F2C08D5DC00FFFFFF /* FullCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2CA50E2C08D5DC00FFFFFF /* FullCoverView.swift */; };
 		AD3E4EB72C070821001B7F41 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3E4EB62C070821001B7F41 /* ThirdView.swift */; };
 		ADD04D452C00A402006C401C /* NavitaionPathSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD04D442C00A402006C401C /* NavitaionPathSampleApp.swift */; };
 		ADD04D492C00A403006C401C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD04D482C00A403006C401C /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD2CA50C2C08D5CE00FFFFFF /* SheetPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetPopupView.swift; sourceTree = "<group>"; };
+		AD2CA50E2C08D5DC00FFFFFF /* FullCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullCoverView.swift; sourceTree = "<group>"; };
 		AD3E4EB52C070775001B7F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AD3E4EB62C070821001B7F41 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 		ADD04D412C00A402006C401C /* NavitaionPathSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavitaionPathSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +162,8 @@
 				ADD04D712C00A49C006C401C /* FirstView.swift */,
 				ADD04D752C00A4AF006C401C /* SecondView.swift */,
 				AD3E4EB62C070821001B7F41 /* ThirdView.swift */,
+				AD2CA50C2C08D5CE00FFFFFF /* SheetPopupView.swift */,
+				AD2CA50E2C08D5DC00FFFFFF /* FullCoverView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -299,6 +305,8 @@
 				ADD04D782C00A519006C401C /* NavigationView.swift in Sources */,
 				ADD04D452C00A402006C401C /* NavitaionPathSampleApp.swift in Sources */,
 				ADD04D7C2C00A55B006C401C /* Navigator.swift in Sources */,
+				AD2CA50D2C08D5CE00FFFFFF /* SheetPopupView.swift in Sources */,
+				AD2CA50F2C08D5DC00FFFFFF /* FullCoverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
